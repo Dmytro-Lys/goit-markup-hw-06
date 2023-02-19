@@ -551,7 +551,7 @@ img {
   top: 50%;
   left: 50%;
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   padding: 24px;
 
   transform: translate(-50%, -50%);
@@ -628,8 +628,8 @@ img {
   border: 1px solid var(--col-border-input);
   outline: transparent;
   transition: border var(--trans-hv);
-  padding-left: 36px;
-  padding-right: 36px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 .modal-input:focus,
 .modal-input:focus-visible {
@@ -660,9 +660,10 @@ img {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 
-  gap: 8px;
-  margin-bottom: 16px;
+  /* gap: 8px; */
+  margin-bottom: 24px;
 }
 .modal-agree-check {
   appearance: none;
@@ -670,6 +671,7 @@ img {
 .modal-icon-check {
   display: flex;
   align-items: center;
+  margin-right: 8px;
 }
 .modal-icon-check-check {
   opacity: 0;
