@@ -607,8 +607,8 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
   pointer-events: none;
   transition: fill var(--trans-hv);
@@ -670,7 +670,6 @@ img {
 .modal-icon-check {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .modal-icon-check-check {
   opacity: 0;
