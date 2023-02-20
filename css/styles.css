@@ -436,6 +436,7 @@ img {
   text-decoration: none;
   color: var(--col-iris);
   display: block;
+  margin-bottom: 16px;
 }
 .footer-logo-right {
   color: var(--col-cloud);
