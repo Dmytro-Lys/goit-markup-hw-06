@@ -417,13 +417,13 @@ img {
 .flex-footer {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* gap: 120px; */
 }
 /* text */
 .footer-text {
   width: 264px;
-  margin-right: 40px;
+  margin-right: 120px;
   gap: 16px;
 }
 .footer-logo-left {
@@ -447,6 +447,7 @@ img {
 }
 /* social */
 .footer-social {
+  margin-right: 80px;
   gap: 16px;
 }
 .footer-social-ul {
@@ -462,6 +463,7 @@ img {
   font-weight: 500px;
   color: var(--col-white);
   text-align: left;
+  margin-bottom: 16px;
 }
 .footer-social-links {
   background-color: var(--col-background-footer);
@@ -505,7 +507,7 @@ img {
 }
 .subscribe-input-mail::placeholder {
   font-size: 12px;
-  line-height: calc(24px / 12px);
+  line-height: calc(24 / 12);
   letter-spacing: 0.04em;
   color: var(--col-mail-footer);
 }
@@ -516,7 +518,7 @@ img {
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(24px / 16px);
+  line-height: calc(24 / 16);
   letter-spacing: 0.04em;
   text-align: center;
   border: none;
@@ -524,7 +526,12 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  /* width: 165px; */
+  cursor: pointer;
+  transition: background-color var(--trans-hv);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--col-ocean);
 }
 .subscribe-btn-icon {
   fill: currentColor;
@@ -552,7 +559,7 @@ img {
   left: 50%;
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 
   transform: translate(-50%, -50%);
 
@@ -595,7 +602,6 @@ img {
 .modal-title {
   display: block;
   text-align: center;
-  margin-top: 48px;
   margin-bottom: 14px;
   font-size: 16px;
   line-height: calc(24px / 16px);
@@ -694,7 +700,7 @@ img {
 .modal-subm-btn {
   display: block;
   width: 170px;
-  background: var(--col-iris);
+  background-color: var(--col-iris);
   box-shadow: 0px 4px 4px var(--col-btn-shadow);
   border-radius: 4px;
   border: none;
@@ -706,12 +712,21 @@ img {
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  transition: background-color var(--trans-hv);
+}
+.modal-subm-btn:hover,
+.modal-subm-btn:focus {
+  background-color: var(--col-ocean);
 }
 .modal-agree-text {
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   user-select: none;
+}
+.modal-agree-pr-policy {
+  color: var(--col-iris);
 }
 /* portfolio */
 /* main */
